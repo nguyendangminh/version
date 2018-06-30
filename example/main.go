@@ -1,8 +1,3 @@
-# version
-Small package for helping to print your build version
-
-## Usage
-```
 package main
 
 import (
@@ -20,9 +15,3 @@ func main() {
 	log.Println("error: invalid command")
 	log.Printf("usage: %s version", os.Args[0])
 }
-
-```
-- Build
-```
-go build -ldflags "-X github.com/nguyendangminh/version.gitRevision=$(git rev-parse HEAD)"
-```
