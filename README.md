@@ -26,3 +26,12 @@ func main() {
 ```
 go build -ldflags "-X github.com/nguyendangminh/version.gitRevision=$(git rev-parse HEAD)"
 ```
+
+## Example
+
+See example in `example` directory
+```
+$ go install -ldflags "-X github.com/nguyendangminh/version.gitRevision=$(git rev-parse HEAD)" github.com/nguyendangminh/version/example
+
+$ example version
+```
