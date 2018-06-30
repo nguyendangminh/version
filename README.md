@@ -35,3 +35,5 @@ $ go install -ldflags "-X github.com/nguyendangminh/version.gitRevision=$(git re
 
 $ example version
 ```
+
+Note: There's a bug in (Go)[https://github.com/golang/go/issues/18369] that causes `go install` with `-ldflags` does not rebuild the binary. The bug is going to be fixed in version Go 1.10. Workaround is to delete the binary before compiling.
